@@ -9,6 +9,56 @@ $fa-font-path: "../webfonts" !default;
 
 @import '~bootstrap/scss/bootstrap';
 
-h1{
-    color: $text-color;
+.movie-wrapper{
+    margin-top: 100px;
 }
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%
+}
+header,footer{
+background-color: $eerie-black;
+}
+main{
+    background-color: $black-olive;
+}
+    .img-box {
+        width: 320px;
+        height: 480px;
+        margin:0 auto;
+        overflow: hidden;
+        cursor: pointer;
+        object-fit: contain;
+        img {
+            width: 100%;
+            height:100%
+        }
+    }
+    h5{
+        color: $flame;
+        font-size: 1.3em;
+        font-weight: 800;
+        text-align: center;
+        margin:0
+    }
+    h1,h2{
+        padding:30px;
+        color:$flame;
+        font-weight: 700;
+        margin:0;
+    }
+    h3{
+        margin:0;
+        color:$flame;
+        font-weight:600;
+        font-size:2.4em;
+    }
+    footer{
+        h2{
+            font-size: 1.2em;
+            margin:0;
+        }
+    }
+    

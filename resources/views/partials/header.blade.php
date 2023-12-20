@@ -1,5 +1,5 @@
 <div>
     <header>
-        <h2 class="text-uppercase">Header <i class="fa-solid fa-home"></i></h2>
+        <h1 class="text-uppercase">Buy-Me</h1>
     </header>
 </div>
