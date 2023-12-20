@@ -29,8 +29,8 @@ main{
     height: 480px;
 }
 .img-movie{
-    width: 400px;
-    height: 600px;
+    width: 380px;
+    height: 550px;
 }
     .img-box,.img-movie{
         margin:0 auto;
@@ -55,11 +55,20 @@ main{
         font-weight: 700;
         margin:0;
     }
+    h1{
+        a{
+            text-decoration: none;
+            color:$flame
+        }
+    }
     h3{
         margin:0;
         color:$flame;
-        font-weight:600;
+        font-weight:800;
         font-size:2.4em;
+        a{
+            text-decoration: none;
+        }
     }
     footer{
         h2{
@@ -70,7 +79,7 @@ main{
     .img-movie{
         margin:0 auto
     }
-    h1:hover{
+    h1:hover,h5:hover{
         cursor:pointer;
     }
     
