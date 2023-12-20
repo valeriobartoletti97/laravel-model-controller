@@ -1,4 +1,4 @@
-@use './partials/variables' as *;
+@use "./partials/variables" as *;
 
 $fa-font-path: "../webfonts" !default;
 
@@ -7,79 +7,82 @@ $fa-font-path: "../webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
-.movie-wrapper{
+.movie-wrapper {
     margin-top: 100px;
 }
-header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
-header,footer{
-background-color: $eerie-black;
+header,
+footer {
+    background-color: $eerie-black;
 }
-main{
+main {
     background-color: $black-olive;
 }
-.img-box{
+.img-box {
     width: 320px;
     height: 480px;
 }
-.img-movie{
+.img-movie {
     width: 380px;
     height: 550px;
 }
-    .img-box,.img-movie{
-        margin:0 auto;
-        overflow: hidden;
-        cursor: pointer;
-        object-fit: contain;
-        img {
-            width: 100%;
-            height:100%
-        }
+.img-box,
+.img-movie {
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+    object-fit: contain;
+    img {
+        width: 100%;
+        height: 100%;
     }
-    h5{
+}
+h5 {
+    color: $flame;
+    font-size: 1.3em;
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+}
+h1,
+h2 {
+    padding: 30px;
+    color: $flame;
+    font-weight: 700;
+    margin: 0;
+}
+h1 {
+    a {
         color: $flame;
-        font-size: 1.3em;
-        font-weight: 800;
-        text-align: center;
-        margin:0
     }
-    h1,h2{
-        padding:30px;
-        color:$flame;
-        font-weight: 700;
-        margin:0;
+}
+h3 {
+    margin: 0;
+    color: $flame;
+    font-weight: 800;
+    font-size: 2.4em;
+}
+footer {
+    h2 {
+        font-size: 1.2em;
+        margin: 0;
     }
-    h1{
-        a{
-            text-decoration: none;
-            color:$flame
-        }
-    }
-    h3{
-        margin:0;
-        color:$flame;
-        font-weight:800;
-        font-size:2.4em;
-        a{
-            text-decoration: none;
-        }
-    }
-    footer{
-        h2{
-            font-size: 1.2em;
-            margin:0;
-        }
-    }
-    .img-movie{
-        margin:0 auto
-    }
-    h1:hover,h5:hover{
-        cursor:pointer;
-    }
-    
+}
+.img-movie {
+    margin: 0 auto;
+}
+h1:hover,
+h5:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
