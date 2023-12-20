@@ -12,4 +12,9 @@ class MovieController extends Controller
         //dd($movies);
         return view('movies.index',compact('movies'));
     }
+
+    public function show($id){
+        $movie = Movie::findorfail($id);
+        return view('movies.show',compact('movie'));
+    }
 }

@@ -24,9 +24,15 @@ background-color: $eerie-black;
 main{
     background-color: $black-olive;
 }
-    .img-box {
-        width: 320px;
-        height: 480px;
+.img-box{
+    width: 320px;
+    height: 480px;
+}
+.img-movie{
+    width: 400px;
+    height: 600px;
+}
+    .img-box,.img-movie{
         margin:0 auto;
         overflow: hidden;
         cursor: pointer;
@@ -60,5 +66,11 @@ main{
             font-size: 1.2em;
             margin:0;
         }
+    }
+    .img-movie{
+        margin:0 auto
+    }
+    h1:hover{
+        cursor:pointer;
     }
     
