@@ -7,61 +7,21 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Installazione laravel
+CONSEGNA 
 
-```bash
 
-cd cartella esercizi
+1 - Create un nuovo progetto Laravel 9 (dal template)
+2 - se  lo avete già va benissimo il nostro shop_db se no tramite phpMyAdmin create un nuovo database laravel_model_controller
+3 - solo se non avete già il db  Importate nel vostro database la tabella movies in allegato
+4 - inserite le vostre credenziali per il database nel file .env
+5 - Create un model Movie
+es. php artisan make:model Movie
+6 - Create la rotta e un controller che gestirà la rotta / (home) e uno per i libri
+es. php artisan make:controller  PageController
+7 - All’interno della funzione index() del controller, recuperate tutti i film dal database e passateli alla view, che quindi li visualizzerà a schermo, tramite delle card.
+8. Stilare il layout nei dettagli con Sass
 
-composer create-project --prefer-dist laravel/laravel:^9.2 your_project_name
 
-cd your_project_name
-
-code . -r
-
-php artisan serve 
-
-ctrl + c
-
-```
-
-## Configurazione
-
-```bash
-
-composer require pacificdev/laravel_9_preset
-
-php artisan preset:ui bootstrap
-
-npm install
-
-npm install --save @fortawesome/fontawesome-free
-
-#in vite config aggiungo agli alias questo pezzo
-'~@fortawesome': path.resolve(__dirname, 'node_modules/@fortawesome'),
-
-andiamo a copiare e ad incollare la cartella webfonts da @fontawesome in resources
-
-#aggiungiamo al nostro file app.scss
-
-@use './partials/variables' as *;
-
-$fa-font-path: "../webfonts" !default;
-
-@import "~@fortawesome/fontawesome-free/scss/fontawesome";
-@import "~@fortawesome/fontawesome-free/scss/regular";
-@import "~@fortawesome/fontawesome-free/scss/solid";
-@import "~@fortawesome/fontawesome-free/scss/brands";
-
-@import '~bootstrap/scss/bootstrap';
-
-##comandi git
-
-git init
-git add . 
-git commit -m "first commit"
-git branch -M main
-git remote add origin your_git_url
-git push -u origin main
-
-```
+BONUS
+Creare rotta, link, aggiungere metodo show al controller, e pagina di dettaglio del movie
+Buon pomeriggio e buon lavoro ! :muscolo:
